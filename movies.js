@@ -74,6 +74,7 @@ router.put("/:id/", function (req, res) {
         year: req.body.year,
         rating: req.body.rating,
       };
+
       res.json({
         message: "Movie id " + req.params.id + " updated.",
         location: "/movies/" + req.params.id,
